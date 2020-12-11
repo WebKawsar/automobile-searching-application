@@ -52,7 +52,7 @@ const Details = () => {
     
     }, []);
 
-    console.log(product)
+    
 
     const onSubmit = data => {
         
@@ -71,7 +71,8 @@ const Details = () => {
         .then(result => {
 
             if(result){
-                console.log(result);
+                
+                setOpen(false)
                 history.push(`/product/${id}`)
             }
 
@@ -100,6 +101,7 @@ const Details = () => {
             
             if(data){
                 console.log(data)
+                // history.push("/home")
             }
         })
     }
