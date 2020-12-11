@@ -101,7 +101,7 @@ const Details = () => {
             
             if(data){
                 console.log(data)
-                // history.push("/home")
+                history.push("/home")
             }
         })
     }
